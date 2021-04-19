@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialog_add_bookshelf"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="12dp">
+
+    <TextView
+        android:id="@+id/dialog_add_bookshelf_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Bookshelf"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="?colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/book_logo"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            app:tint="@color/white" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="20dp"
+            android:backgroundTint="#65000000"
+            android:layout_gravity="bottom|end">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:layout_margin="8dp"
+                app:tint="@color/white"
+                android:foreground="?attr/selectableItemBackground"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/color_selector1"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeWidthFocused="2dp"
+        android:hint="Bookshelf Label">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_add_bookshelf_ed_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="?colorPrimary"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:inputType="textCapWords" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

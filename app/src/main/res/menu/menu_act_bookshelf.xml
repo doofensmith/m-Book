@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/submenu1"
+        android:title="Profile">
+
+        <menu>
+            <item
+                android:id="@+id/menu_ab_editprofile"
+                android:title="Edit Profile"
+                android:icon="@drawable/ic_baseline_edit_24"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/submenu2"
+        android:title="Bookshelf">
+
+        <menu>
+            <item
+                android:id="@+id/menu_ab_addbookshelf"
+                android:title="Add Bookshelf"
+                android:icon="@drawable/ic_baseline_book_24"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/submenu3"
+        android:title="System">
+
+        <menu>
+            <item
+                android:id="@+id/menu_ab_setting"
+                android:title="Setting"
+                android:icon="@drawable/ic_baseline_settings_24" />
+
+            <item
+                android:id="@+id/menu_ab_logout"
+                android:title="Log Out"
+                android:icon="@drawable/ic_baseline_vpn_key_24"/>
+        </menu>
+
+    </item>
+
+</menu>

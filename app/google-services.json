@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "208250811479",
+    "project_id": "m-book-a4b17",
+    "storage_bucket": "m-book-a4b17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208250811479:android:728747574f0ce862de9f12",
+        "android_client_info": {
+          "package_name": "com.softtech.mbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208250811479-r62qr2tsnrshh4qbj0sp7k7rfvet8g7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY7BMnDwrEzHmliWCJpQLzRXDp2OdP1mU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208250811479-r62qr2tsnrshh4qbj0sp7k7rfvet8g7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

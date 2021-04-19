@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="24dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/book_logo"
+            app:tint="@color/purple_500"
+            android:layout_marginBottom="40dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            app:startIconTint="@color/color_selector1"
+            app:hintEnabled="false"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:boxStrokeColor="@color/color_selector1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/al_ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textSize="14sp"
+                android:textColor="@color/purple_500"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/color_selector1"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            android:layout_marginBottom="12dp"
+            app:hintEnabled="false"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:startIconTint="@color/color_selector1"
+            app:boxStrokeColor="@color/color_selector1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/al_ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textSize="14sp"
+                android:textColor="@color/purple_500"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxLines="1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/shape_edittext1"-->
+<!--            android:hint="Email"-->
+<!--            android:maxLength="30"-->
+<!--            android:maxLines="1"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/purple_500"-->
+<!--            android:paddingHorizontal="12dp"-->
+<!--            android:paddingVertical="8dp"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_person_24"-->
+<!--            android:drawablePadding="4dp"-->
+<!--            android:drawableTint="@color/color_selector1"-->
+<!--            android:layout_marginBottom="12dp" />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/shape_edittext1"-->
+<!--            android:hint="Password"-->
+<!--            android:maxLength="20"-->
+<!--            android:maxLines="1"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/purple_500"-->
+<!--            android:paddingHorizontal="12dp"-->
+<!--            android:paddingVertical="8dp"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_lock_24"-->
+<!--            android:drawablePadding="4dp"-->
+<!--            android:drawableTint="@color/color_selector1"-->
+<!--            android:layout_marginBottom="20dp" />-->
+
+        <Button
+            android:id="@+id/al_bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginBottom="20dp"
+            android:paddingVertical="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New User? "
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/al_tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_selector2"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
